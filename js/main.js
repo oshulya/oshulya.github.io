@@ -77,7 +77,7 @@ menu_links.forEach(link => {
         e.preventDefault();
         burger_checkbox.checked = false;
         var target = document.querySelector(e.target.hash);
-        target.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+        target.scrollIntoView({behavior: "smooth", block: "nearest", inline: "nearest"});
     });
 });
 
