@@ -73,28 +73,28 @@
                     </div>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <a data-fancybox="gallery" href="img/1.jpg">
+                        <a class="grouped_elements" data-fancybox="gallery" rel="group1" href="img/1.jpg">
                             <img src="img/1.jpg" class="d-block w-100" alt="...">
                         </a>
                         
                       </div>
                       <div class="carousel-item">
-                        <a data-fancybox="gallery" href="img/2.jpg">
+                        <a class="grouped_elements" data-fancybox="gallery" rel="group1" href="img/2.jpg">
                             <img src="img/2.jpg" class="d-block w-100" alt="...">
                         </a>
                       </div>
                       <div class="carousel-item">
-                        <a data-fancybox="gallery" href="img/3.jpg">
+                        <a class="grouped_elements" data-fancybox="gallery" rel="group1" href="img/3.jpg">
                             <img src="img/3.jpg" class="d-block w-100" alt="...">
                         </a>
                       </div>
                       <div class="carousel-item">
-                        <a data-fancybox="gallery" href="img/4.jpg">
+                        <a class="grouped_elements" data-fancybox="gallery" rel="group1" href="img/4.jpg">
                             <img src="img/4.jpg" class="d-block w-100" alt="...">
                         </a>
                       </div>
                       <div class="carousel-item">
-                        <a data-fancybox="gallery" href="img/5.jpg">
+                        <a class="grouped_elements" data-fancybox="gallery" rel="group1" href="img/5.jpg">
                             <img src="img/5.jpg" class="d-block w-100" alt="...">
                         </a>
                       </div>
@@ -166,37 +166,37 @@
 
         <div id="mockups" class="row row-cols-1 row-cols-md-3 gy-4">
             <div class="col thumb">
-                <a data-fancybox="gallery" href="img/M1.jpg">
+                <a class="grouped_elements" data-fancybox="gallery" rel="group2" href="img/M1.jpg">
                     <img class="img-fluid rounded-1" src="img/M1.jpg" alt="...">
                 </a>
             </div>
 
             <div class="col thumb">
-                <a data-fancybox="gallery" href="img/M6.jpg">
+                <a class="grouped_elements" data-fancybox="gallery" rel="group2" href="img/M6.jpg">
                     <img class="img-fluid rounded-1" src="img/M6.jpg" alt="...">
                 </a>
             </div>
 
             <div class="col thumb">
-                <a data-fancybox="gallery" href="img/M3.jpg">
+                <a class="grouped_elements" data-fancybox="gallery" rel="group2" href="img/M3.jpg">
                     <img class="img-fluid rounded-1" src="img/M3.jpg" alt="...">
                 </a>
             </div>
 
             <div class="col thumb">
-                <a data-fancybox="gallery" href="img/M4.jpg">
+                <a class="grouped_elements" data-fancybox="gallery" rel="group2" href="img/M4.jpg">
                     <img class="img-fluid rounded-1" src="img/M4.jpg" alt="...">
                 </a>
             </div>
 
             <div class="col thumb">
-                <a data-fancybox="gallery" href="img/M5.jpg">
+                <a class="grouped_elements" data-fancybox="gallery" rel="group2" href="img/M5.jpg">
                     <img class="img-fluid rounded-1" src="img/M5.jpg" alt="...">
                 </a>
             </div>
 
             <div class="col thumb">
-                <a data-fancybox="gallery" href="img/M2.jpg">
+                <a class="grouped_elements" data-fancybox="gallery" rel="group2" href="img/M2.jpg">
                     <img class="img-fluid rounded-1" src="img/M2.jpg" alt="...">
                 </a>
             </div>
@@ -231,17 +231,17 @@
         </div>
         <div class="row flex-column gap-5 flex-md-row">
             <div class="col thumb">
-                <a data-fancybox="gallery" href="img/cert1.jpg">
+                <a class="grouped_elements" rel="group3" data-fancybox="gallery" href="img/cert1.jpg">
                     <img class="img-fluid rounded-1" src="img/cert1.jpg" alt="...">
                 </a>
             </div>
             <div class="col thumb">
-                <a data-fancybox="gallery" href="img/cert2.jpg">
+                <a class="grouped_elements" rel="group3" data-fancybox="gallery" href="img/cert2.jpg">
                     <img class="img-fluid rounded-1" src="img/cert2.jpg" alt="...">
                 </a>
             </div>
             <div class="col thumb">
-                <a data-fancybox="gallery" href="img/cert3.jpg">
+                <a class="grouped_elements" rel="group3" data-fancybox="gallery" href="img/cert3.jpg">
                     <img class="img-fluid rounded-1" src="img/cert3.jpg" alt="...">
                 </a>
             </div>
@@ -314,5 +314,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script>
+        $("a[rel=group1]").fancybox({
+            'hideOnContentClick': true,
+            'loop': true
+        });
+        $("a[rel=group2]").fancybox({
+            'hideOnContentClick': true,
+            'loop': true
+        });
+        $("a[rel=group3]").fancybox({
+            'hideOnContentClick': true,
+            'loop': true
+        });
+    </script>
 </body>
 </html>
