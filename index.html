@@ -4,398 +4,304 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>OSHU - Art photography for your walls</title>
 </head>
 <body>
-    <!-- TO DO: MODAL FOR MOCKUP -->
-    <dialog id="full-mockup">
-        <div class="close-btn">X</div>
-        <img src="img/Moc3.jpg" alt="">
-    </dialog>
-
-    <!-- HEADER -->
     <header>
-        <div class="header-area">
-            <div class="header-item">
-                <p class="slogan">O.SHU</p>
-            </div>
-            <div class="header-item header-offer">
-                <p>Set of 5 photos</p>
-                <button>Buy this set</button>
-            </div>
-        </div>
-        
-        <div class="header-area">
-            <div class="menu">
-                <a class="menu-item" href="#main">Main</a>
-                <a class="menu-item" href="#process">Process</a>
-                <a class="menu-item" href="#howto">How to use</a>
-                <a class="menu-item" href="#about">About author</a>
-                <a class="menu-item" href="#contacts">Contacts</a>
-            </div>
-
-            <nav role="navigation">
-                <div id="menuToggle">
-                  <input type="checkbox" />
-                  
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  
-                  <ul id="menu">
-                    <li><a class="menu-item" href="#main">Main</a></li>
-                    <li><a class="menu-item" href="#process">Process</a></li>
-                    <li><a class="menu-item" href="#howto">How to use</a></li>
-                    <li><a class="menu-item" href="#about">About author</a></li>
-                    <li><a class="menu-item" href="#contacts">Contacts</a></li>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">O.SHU</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#main">Main</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#process">Process</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#howto" class="nav-link">How to use</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About author</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#awards" class="nav-link">Awards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacts" class="nav-link">Contacts</a>
+                    </li>
                   </ul>
                 </div>
-              </nav>
-        </div>
+              </div>
+        </nav>
     </header>
 
-    <!-- HERO -->
-    <div class="container" id="main">
-        <div class="hero">
-            <div class="hero-item c1">
-                <div class="hero-title">
-                    <p>Art photography</p>
-                    <p>for your walls</p>
-                </div>
-    
-                <div class="hero-offer">
-                    <div class="offer-title">
-                        <p>Set of 5 Photos</p>
-                    </div>
-    
-                    <div class="offer-text">
-                        <p>300 dpi each photo</p>
-                        <p>150 euro for set</p>
-                    </div>
-    
-                    <div class="offer-button">
-                        <button>Buy this set</button>
-                    </div>
-    
-                    <div class="offer-terms">
-                        <p>Photos will be in your mail<br>after payment</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SLIDER DESKTOP -->
-            <div class="hero-item c2">
-                <div class="slider">
-                    <!-- Slides -->
-                    <div class="slide">
-                        <img src="img/5.jpg">
-                    </div>
-
-                    <div class="slide">
-                        <img src="img/2.jpg">
-                    </div>
-
-                    <div class="slide">
-                        <img src="img/3.jpg">
-                    </div>
-
-                    <div class="slide">
-                        <img src="img/4.jpg">
-                    </div>
-
-                    <div class="slide">
-                        <img src="img/1.jpg">
-                    </div>
-
-                    <div class="slider-nav">
-                        <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
-                        <div class="next" onclick="plusSlides(1)">&#10095;</div>
-                    </div>
+    <section id="main" class="container">
+        <div class="row flex-column-reverse flex-xxl-row-reverse">
+            <div class="col-12 col-xxl-4 d-flex flex-column">
+                <div class="d-flex justify-content-center">
+                    <h1 class="mt-2 mb-3 mb-lg-5 mt-lg-5 text-center text-lg-start">Art photography<br>for your walls</h1>
                 </div>
                 
-                <div class="thumbnails">
-                    <!-- Thumbnail images -->
-                    <div class="row">
-                        <div class="column">
-                            <img class="thumb" src="img/5.jpg" style="width:100%" onclick="currentSlide(1)">
-                        </div>
-                        <div class="column"> 
-                            <img class="thumb" src="img/2.jpg" style="width:100%" onclick="currentSlide(2)">
-                        </div>
-                        <div class="column">
-                            <img class="thumb" src="img/3.jpg" style="width:100%" onclick="currentSlide(3)">
-                        </div>
-                        <div class="column">
-                            <img class="thumb" src="img/4.jpg" style="width:100%" onclick="currentSlide(4)">
-                        </div>
-                        <div class="column">
-                            <img class="thumb" src="img/1.jpg" style="width:100%" onclick="currentSlide(5)">
-                        </div> 
+                <div class="card cta">
+                    <div class="card-body d-flex flex-column align-items-center">
+                      <h3 class="card-title text-center mt-3 mt-lg-5">Get set of 5 photos<br>in a few seconds</h3>
+                        <ul class="card-text mt-4 mb-4 text-start">
+                            <li>300 dpi each photo</li>
+                            <li>150 € for set </li>
+                            <li>Sending instantly by email</li>
+                        </ul>
+                      <a href="#" class="btn btn-primary mb-4 w-75 pb-3 pt-3">Buy this set</a>
                     </div>
+                  </div>
+            </div>
+            <div class="col-12 col-xxl-8">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-touch="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/4.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/5.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="container">
+        <div class="row row-cols-auto justify-content-center justify-content-lg-start flex-colum flex-lg-row">
+            <div class="col">
+                <h2 class="text-center text-lg-start">Process</h2>
+            </div>
+        </div>
+        <div class="row flex-column flex-lg-row justify-content-center align-items-center gy-5">
+            <div class="col d-flex flex-column justify-content-center align-items-center text-center progress">
+                <span class="circle mb-3">1</span>
+                <p>Click the button<br>“Buy this set”</p>
+            </div>
+            <div class="col arrow d-none d-lg-flex">
+                <svg width="108" height="24" viewBox="0 0 108 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M107.061 13.0607C107.646 12.4749 107.646 11.5251 107.061 10.9393L97.5147 1.3934C96.9289 0.807611 95.9792 0.807611 95.3934 1.3934C94.8076 1.97919 94.8076 2.92893 95.3934 3.51472L103.879 12L95.3934 20.4853C94.8076 21.0711 94.8076 22.0208 95.3934 22.6066C95.9792 23.1924 96.9289 23.1924 97.5147 22.6066L107.061 13.0607ZM0 13.5H106V10.5H0V13.5Z" fill="#E0883A"/>
+                </svg>
+            </div>
+            <div class="col d-flex flex-column justify-content-center align-items-center text-center progress">
+                <span class="circle mb-3">2</span>
+                <p>Enter your<br>email address</p>
+            </div>
+            <div class="col arrow d-none d-lg-flex">
+                <svg width="108" height="24" viewBox="0 0 108 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M107.061 13.0607C107.646 12.4749 107.646 11.5251 107.061 10.9393L97.5147 1.3934C96.9289 0.807611 95.9792 0.807611 95.3934 1.3934C94.8076 1.97919 94.8076 2.92893 95.3934 3.51472L103.879 12L95.3934 20.4853C94.8076 21.0711 94.8076 22.0208 95.3934 22.6066C95.9792 23.1924 96.9289 23.1924 97.5147 22.6066L107.061 13.0607ZM0 13.5H106V10.5H0V13.5Z" fill="#E0883A"/>
+                </svg>
+            </div>
+            <div class="col d-flex flex-column justify-content-center align-items-center text-center progress">
+                <span class="circle mb-3">3</span>
+                <p>Pay by card or get<br>an invoice by email</p>
+            </div>
+            <div class="col arrow d-none d-lg-flex">
+                <svg width="108" height="24" viewBox="0 0 108 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M107.061 13.0607C107.646 12.4749 107.646 11.5251 107.061 10.9393L97.5147 1.3934C96.9289 0.807611 95.9792 0.807611 95.3934 1.3934C94.8076 1.97919 94.8076 2.92893 95.3934 3.51472L103.879 12L95.3934 20.4853C94.8076 21.0711 94.8076 22.0208 95.3934 22.6066C95.9792 23.1924 96.9289 23.1924 97.5147 22.6066L107.061 13.0607ZM0 13.5H106V10.5H0V13.5Z" fill="#E0883A"/>
+                </svg>
+            </div>
+            <div class="col d-flex flex-column justify-content-center align-items-center text-center progress">
+                <span class="circle mb-3 d-flex align-items-center">
+                    <svg width="70" height="73" viewBox="0 0 70 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 34.9828C13.7307 34.7719 16.543 34.1581 26.2213 47.9089C33.6437 33.6347 41.892 21.2795 50.8197 10.5009C59.6094 -0.114382 59.6777 -0.141344 70 0.0378773C52.4371 22.68 38.1049 46.9049 26.6424 72.5716C20.5078 57.3267 11.9396 44.4926 0 34.9828Z" fill="#E0883A"/>
+                    </svg>
+                </span>
+                <p>Dowload photos<br>from your email</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="howto" class="container">
+        <div class="row">
+            <div class="col text-md-start">
+                <h2 class="text-center text-lg-start">How to use</h2>
+            </div>
+        </div>
+
+        <div id="mockups" class="row row-cols-1 row-cols-md-3 gy-4">
+            <div class="col thumb">
+                <a data-fancybox="gallery" href="img/M1.jpg">
+                    <img class="img-fluid rounded-1" src="img/M1.jpg" alt="...">
+                </a>
+            </div>
+
+            <div class="col thumb">
+                <a data-fancybox="gallery" href="img/M6.jpg">
+                    <img class="img-fluid rounded-1" src="img/M6.jpg" alt="...">
+                </a>
+            </div>
+
+            <div class="col thumb">
+                <a data-fancybox="gallery" href="img/M3.jpg">
+                    <img class="img-fluid rounded-1" src="img/M3.jpg" alt="...">
+                </a>
+            </div>
+
+            <div class="col thumb">
+                <a data-fancybox="gallery" href="img/M4.jpg">
+                    <img class="img-fluid rounded-1" src="img/M4.jpg" alt="...">
+                </a>
+            </div>
+
+            <div class="col thumb">
+                <a data-fancybox="gallery" href="img/M5.jpg">
+                    <img class="img-fluid rounded-1" src="img/M5.jpg" alt="...">
+                </a>
+            </div>
+
+            <div class="col thumb">
+                <a data-fancybox="gallery" href="img/M2.jpg">
+                    <img class="img-fluid rounded-1" src="img/M2.jpg" alt="...">
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <div class="row">
+            <h2 class="text-center text-lg-start">About author</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-2 align-items-center gx-5 gy-5">
+            <div class="col">
+                <div class="ratio ratio-1x1">
+                    <img class="img-fluid rounded-circle" src="img/olga.jpeg" alt="">
                 </div>
                 
             </div>
-            
-            <!-- SLIDER MOBILE -->
-            <div class="c3">
-                <div class="slider-mobile">
-                    <!-- Slides -->
-                    <div class="slide-mobile" id="slide-mobile-1">
-                        <img src="img/5.jpg">
-                    </div>
-
-                    <div class="slide-mobile" id="slide-mobile-2">
-                        <img src="img/2.jpg">
-                    </div>
-
-                    <div class="slide-mobile" id="slide-mobile-3">
-                        <img src="img/3.jpg">
-                    </div>
-
-                    <div class="slide-mobile" id="slide-mobile-4">
-                        <img src="img/4.jpg">
-                    </div>
-
-                    <div class="slide-mobile" id="slide-mobile-5">
-                        <img src="img/1.jpg">
-                    </div>
-                    </div>
-                    <div class="slider-mobile-nav">
-                        <span class="active"></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
+            <div class="col">
+                <p>My name is Olga Shu and I tried to find a way to capture the moments that inspire me in my life.</p>
+                <p>I found it in a photography.</p>
+                <p>Fine art has constantly drawn my attention and I have always tried to find a way how to capture moments which surrounds me.</p>
+                <p>I suggest you buy this amazing set of 5 photos, which was taken in Laitse Castle in Estonia.</p>
+                <p>A story about two ballerinas lost in a huge castle. Hope you will enjoy them!</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- SCROLL ARROW -->
-    <div class="container">
-        <div class="scroll-arrow">
-            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <rect width="60" height="60" fill="url(#pattern0)"/>
-                <defs>
-                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                <use xlink:href="#image0_1_76" transform="scale(0.0166667)"/>
-                </pattern>
-                <image id="image0_1_76" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABmJLR0QA/wD/AP+gvaeTAAAA+klEQVRoge3Y2w7BUBBGYd6wGo0Lnp5IiMMLkCw3JramFXR0H/zfA8zMyr5qJxMRERERERERkb8DNMAR2AJV7HvagBmwA87AYuiwKXDg4TJ4qCNgcb/JnIDp0KF7niUR3RELsPcYXHcMjhrdE3sBaq8F844FV2DlsuCzW5qeW5bei6JHjxYbLIwWPXpssHj06GixwQGjRUePDQ75eXQyscFBP4tOLjY4zD062VjjGZ18rPGIzibWDInOLtZ8E51trPkkOvtY8050MbHmVXRxsYb+b9ekvrFd9bx0WS/b9iK6vFjTEV1urAEqYAOsSfC3r4iIiIiIiIhIfm4dY2Hytt7edgAAAABJRU5ErkJggg=="/>
-                </defs>
-            </svg>
+    <section id="awards" class="container">
+        <div class="row">
+            <h2 class="text-center text-lg-start">Awards</h2>
         </div>
-    </div>
-
-    <!-- PROCESS -->
-    <div class="container-fullwidth" id="process">
-        <div class="process">
-            <div>
-                <h2>Process</h2>
-            <div class="progress">
-                <div class="step">
-                    <div class="circle">
-                        <p>1</p>   
-                    </div>
-                    <p class="step-title">
-                        Click the button
-                        <br>“Buy this set”
-                    </p>
-                </div>
-
-                <div class="arrow"></div>
-
-                <div class="step">
-                    <div class="circle">
-                        <p>2</p>   
-                    </div>
-                    <p class="step-title">
-                        Enter your
-                        <br>email address
-                    </p>
-                </div>
-
-                <div class="arrow"></div>
-
-                <div class="step">
-                    <div class="circle">
-                        <p>3</p>   
-                    </div>
-                    <p class="step-title">
-                        Pay by card or get
-                        <br>an invoice by email
-                    </p>
-                </div>
-
-                <div class="arrow"></div>
-
-                <div class="step">
-                    <div class="circle filled">
-                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <rect width="60" height="60" fill="url(#pattern2)"/>
-                            <defs>
-                            <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
-                            <use xlink:href="#image0_39_881" transform="scale(0.0166667)"/>
-                            </pattern>
-                            <image id="image0_39_881" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABmJLR0QA/wD/AP+gvaeTAAAA80lEQVRoge3X2wqCQBSF4f8NO2B4Ue8eFFTgIyjYhe4b0+gw454Z1gdBV7l+RkJBRERERERksAPuQANUzluiq4EW6MdP4zsnrmlsDzxcF0U0F9sCe89RsRx4je2Ao+eoWBSLYvOnWBSbP8Wi2PwpFsXmzzV2A1yA8/g9tqVXvHqFawNwW/HC7rEwnO4aA5KIheE2jj0kmVhTzQzqgFOA30723zhGdLKxJmR08rEmRHQ2seaf6OxizS/R2caab6KzjzWfRBcTa95FFxdrlp6WknqCCm3upIs72aml6CJjzTS66FizBa4Mr5db5y0iIiIiIhLIE3OiDtc0jvjnAAAAAElFTkSuQmCC"/>
-                            </defs>
-                            </svg>
-                    </div>
-                    <p class="step-title">
-                        Photos will be in your
-                        <br>mail after payment
-                    </p>
-                </div>
+        <div class="row flex-column gap-5 flex-md-row">
+            <div class="col thumb">
+                <a data-fancybox="gallery" href="img/cert1.jpg">
+                    <img class="img-fluid rounded-1" src="img/cert1.jpg" alt="...">
+                </a>
             </div>
+            <div class="col thumb">
+                <a data-fancybox="gallery" href="img/cert2.jpg">
+                    <img class="img-fluid rounded-1" src="img/cert2.jpg" alt="...">
+                </a>
             </div>
-            
+            <div class="col thumb">
+                <a data-fancybox="gallery" href="img/cert3.jpg">
+                    <img class="img-fluid rounded-1" src="img/cert3.jpg" alt="...">
+                </a>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <!-- HOW TO USE -->
-    <div class="container" id="howto">
-        <div class="how-to-use">
-            <h2>How to use</h2>
-            <p>
-                You can use those photos
-                to decorate:
-            </p>
-            <ul>
-                <li>
-                    <span class="marker"></span>
-                    <p>public spaces</p>
-                </li>
-
-                <li>
-                    <span class="marker"></span>
-                    <p>your home walls</p>
-                </li>
-
-                <li>
-                    <span class="marker"></span>
-                    <p>things you want to <br>
-                        make unique</p>
-                </li>
-            </ul>
-        </div>
-
-        <div class="mockups">
-            <img src="img/Moc1.jpg" alt="">
-            <img src="img/Moc2.jpg" alt="">
-            <img src="img/Moc3.jpg" alt="">
-            <img src="img/Moc4.jpg" alt="">
-        </div>
-
-        <div class="scroll-hint">
-            <p>Scroll right</p>
-        </div>
-
-        
-    </div>
-
-    <!-- ABOUT -->
-    <div class="container" id="about">
-        <div class="about">
-            <h2>About author</h2>
-
-            <div class="author">
-                <div class="col1">
-                    <img src="img/olga.jpeg" alt="">
+    <footer>
+        <section id="contacts" class="container">
+            <div class="row">
+                <h2 class="text-center text-lg-start">Contacts</h2>
+            </div>
+            <div class="row flex-column flex-md-row justify-content-md-between">
+                <div class="col-12 col-lg-7 d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-lg-start">
+                    <p>Write me&nbsp;</p>
+                    <p><a href="mailto:olgashulzhitskaya@gmail.com">olgashulzhitskaya@gmail.com</a></p>
                 </div>
-    
-                <div class="col2">
-                    <p>
-                        My name is Olga SHU and I am photographer from Estonia.
-                        <br><br>
-                        <span>Fine art photography has constantly drawn my attention and I have always 
-                        tried to find a way how to capture moments which surrounds me. 
-                        <br><br>More than 10 years have passed by from 
-                        first shoots on a smart phone to this day. Many things have 
-                        changed during that time, but my passion has lived on. Passion 
-                        for progress and joy of a good work and a positive feedback.
-                        <br><br></span>
-                        I suggest you buy this amazing set of 5 photos, which was taken 
-                        in Laitse Castle in Estonia. A story about two ballerinas lost in 
-                        a huge castle.<span><br><br> Hope you will enjoy them!</span>
+                <div class="col-12 col-lg-5 d-flex align-items-center justify-content-center justify-content-lg-end gap-3">
+                    <p class="mb-0">Follow  me</p>
                         
-                    </p>
+                        <!-- INSTAGRAM -->
+                        <a href="https://www.instagram.com/oshu_photo/">
+                            <span class="icon">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="60" height="60" fill="url(#pattern3)"/>
+                                    <defs>
+                                    <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_12_553" transform="scale(0.0166667)"/>
+                                    </pattern>
+                                    <image id="image0_12_553" width="60" height="60" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                    </svg>                                
+                            </span>
+                        </a>
+
+                        <!-- FACEBOOK -->
+                        <a href="https://www.facebook.com/olgashulzitskaya">
+                            <span class="icon">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="60" height="60" fill="url(#pattern4)"/>
+                                    <defs>
+                                    <pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_12_555" transform="scale(0.0166667)"/>
+                                    </pattern>
+                                    <image id="image0_12_555" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABmJLR0QA/wD/AP+gvaeTAAACKUlEQVRoge2aO2sUURSAvzMTFwlGZBFtfBRmIMQiFtpZWPgo4qPSxh+wsIRY2OhPsFGEDVj4C7QMS7KilXZBsLGIq50oFjGYFUTdudciAUV394477+F81TL37D3n49w9LJcBRVEURVHyQqIEvV26ctja8B7Y88BUyjX9Lz0LT40X3p5prq67gp3C27L9V0A9kfLS4zPGzAWLK+9HBXmuXbY7W3hZgDq+d9cV5BTeOcblwHLBFRJBuHC/2VHsdQVEEa4UKlx1iib8TcQ+QOSy8eXQ7h+Tk8FCW2oe9T61/RhzHGufxEkwkVSlcbHwor+rf2220fn499rRZntz5+NGt3XxE9ix8xRC2GLXxNizs43O97RzFeFIh37oXQ8WV1KXhSJ0WOzysRvtblbp8u+wleUs0+XeYc/atUHP392/dMT45iFwCtj3e2X8gQUFEO7X/H+mMkDomzsC55LOl/uR7vHhy6DnAmfSyJe78MnGy59Dlg6kkS934RGkUluRhVMhs6EVLLQj3Z+54t+05p8LnB63jtJ1WGA6zvdLJfx66eoe4GCcPUolXAu/BkS8Wh5GqYQRL9ZxhtIJE8TdIrMp3W3ND/wTPGwaD4uPS7k6nAAqXHVUuOqocNVR4aqjwlVHhatOFOFe6lUkx8A77j9xC4t9lkgp2dBxBTiFQzG3gE1XXAHYwJibriCn8ExzdV1kYg7hMbCVSGnJsgU8wpgTrrfwFEVRFEXJl1+3bYNlSyDbiQAAAABJRU5ErkJggg=="/>
+                                    </defs>
+                                </svg>
+                            </span>
+                        </a>
+
+                        <!-- BEHANCE -->
+                        <a href="https://www.behance.net/frecca">
+                            <span class="icon">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="60" height="60" fill="url(#pattern5)"/>
+                                    <defs>
+                                    <pattern id="pattern5" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_12_556" transform="scale(0.0166667)"/>
+                                    </pattern>
+                                    <image id="image0_12_556" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABmJLR0QA/wD/AP+gvaeTAAAEbElEQVRoge2ZT2wUVRzHP7/ZdtsuWgOp0Utj1N2C1QgJBFOamECMhm7VU8NBYurJ2C5VsQnEg2k06Alq2i1KDBwEDrYnI2vxD8qBQCLFGBI1Zbc1UKxgMY1At7jdmZ+H7uJu/+xs2Wmt63ySSea995vf+373zZt5bxZcXFxcXFxc/i0kn6BYz/PVqmYn6NPA3YusaaHcQPSEKdbuNS3HB+2CbQ1Pm03+AKxyRN7iMS5Sstbf+ulIriDDLsv0yC57swArleReuyBbw6nb+L+B8oxdSB6Gl92czUWlXUA+hosK13Cx4xoudlzDxY5ruNgpcSKJIIOK3pyneQUQADw5cwj1/tbI6Zn1Q+GGGgs5D5QVrtQJw6I7/a2RzlwhQweeusdMlDeL6NvMs/wTjDnvtqR6DEOsgmX+048N0XBQc7WXJ3y+6p19k/l0NtjVuNEw9BRQmqe+BRMIRXJ6KniEM81eCDc8KUgDgCgJDImV/VXRl45Z3Xbsu1g4eFShudB+7xRH5nAaQ2WjCrsAVABVbnnjLarUiaBMV51C5jU8CnJC4KKiBuAHtgBVTml01PA8PDHc9Ww1fHYJQJG7Ut4zmVTR138dix/c3HEymdkwsq+pYrIs3i5KBw68VZbC8JXx8tHf0gUR3Tqj3RS1GgOh/m/mujg1Hd650N04JqIfFCrGUcMKV4BzqfNJA35MGmbnhpfPTQFEw8FXIPurhIiG/Smz2tFhxKoGdoFuA5LA/kAocgigZsexD6Ph4HagvhCNjhoO7IgcAY7MrI92bX0Yw/M+aOPMNjW1O30eqzrbBryb0Xww1hP8xd8a+RZA4CMt0PCSrLQCbf1DXkNfBHkTSGQ0XQq09Q9llOuB4cxDlbp0o5gya2GyUBwd4Wh3cDvCa+mywlWBrxLXfPsfaOkbB96Lhhsug3wMIMLFzOsDoUhTrvw3E4lRX0Vhr3BHR1jgfmB9+hBoADpL743vSccEQp8fBgYAVIkvJP/j7V8uKH4uluIpjShbssrIaUU3KJr1vTva3XgG0dXz5Yn1FK5lSeawwPnsGi2brpfagQPrb9+jKjoIrLQ5CmKxDV8FOTyFtz2zUmFT6nRF5dR9t19THtN4C8h8iCVV9YVAKCKBUEREsu+UO6HgzYPdYn1Wvu5gE0JvRtX3iWu+ukc7+hIwvbJKeCc3KVSqZZ4NtPVfBlBFYj3Bfsj974KdnoINq1Bb0xr52S4PQKy7cZuKHgJ82Sr0kxJfvPnBl07emrOP3ibP0NjEXlV51a6PRTcM/KSqe1D5fVZyj2GIWqsUHgGeA9blyDMMus80rK8rPaUj5kS5JrwT1aawWSwJITxmpxWWYHsI1IrI0Tl/OrVmbxPm5yGQsMfyMGFZ4I0Dgih5/oudH/+7b1qu4WLHNVzsuIaLnXwM31h0Fc7xp12AvWHRE45IWRq+sAuwNWyKtRsYd0TO4vIHlvWGXZCt4TUtxwdFStYi9AHXHZHmLNeBXixrXXpn5eLi4uLi4rI8+RsZCH7GQADIrQAAAABJRU5ErkJggg=="/>
+                                    </defs>
+                                </svg>
+                            </span>
+                        </a>
                 </div>
             </div>
-
-            <!-- TO DO: MODAL FOR CERTS -->
-            <div class="certificates">
-                <img src="img/cert1.jpg" alt="">
-                <img src="img/cert2.jpg" alt="">
-                <img src="img/cert3.jpg" alt="">
-            </div>
-        </div>
-    </div>
-
-    <!-- FOOTER CONTACTS -->
-    <footer class="container" id="contacts">
-        <div class="contacts">
-            <h2>Contacts</h2>
-            <div class="footer">
-                <div class="contact">
-                    <p>Write me <a href="mailto:olgashulzhitskaya@gmail.com">olgashulzhitskaya@gmail.com</a></p>
-                </div>
-
-                <div class="social">
-                    <p>Follow  me</p>
-
-                    <!-- INSTAGRAM -->
-                    <a href="https://www.instagram.com/oshu_photo/">
-                        <span class="icon">
-                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <rect width="60" height="60" fill="url(#pattern3)"/>
-                                <defs>
-                                <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                <use xlink:href="#image0_12_553" transform="scale(0.0166667)"/>
-                                </pattern>
-                                <image id="image0_12_553" width="60" height="60" xlink:href="data:image/png;base64,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"/>
-                                </defs>
-                                </svg>                                
-                        </span>
-                    </a>
-
-                    <!-- FACEBOOK -->
-                    <a href="https://www.facebook.com/olgashulzitskaya">
-                        <span class="icon">
-                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <rect width="60" height="60" fill="url(#pattern4)"/>
-                                <defs>
-                                <pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                <use xlink:href="#image0_12_555" transform="scale(0.0166667)"/>
-                                </pattern>
-                                <image id="image0_12_555" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABmJLR0QA/wD/AP+gvaeTAAACKUlEQVRoge2aO2sUURSAvzMTFwlGZBFtfBRmIMQiFtpZWPgo4qPSxh+wsIRY2OhPsFGEDVj4C7QMS7KilXZBsLGIq50oFjGYFUTdudciAUV394477+F81TL37D3n49w9LJcBRVEURVHyQqIEvV26ctja8B7Y88BUyjX9Lz0LT40X3p5prq67gp3C27L9V0A9kfLS4zPGzAWLK+9HBXmuXbY7W3hZgDq+d9cV5BTeOcblwHLBFRJBuHC/2VHsdQVEEa4UKlx1iib8TcQ+QOSy8eXQ7h+Tk8FCW2oe9T61/RhzHGufxEkwkVSlcbHwor+rf2220fn499rRZntz5+NGt3XxE9ix8xRC2GLXxNizs43O97RzFeFIh37oXQ8WV1KXhSJ0WOzysRvtblbp8u+wleUs0+XeYc/atUHP392/dMT45iFwCtj3e2X8gQUFEO7X/H+mMkDomzsC55LOl/uR7vHhy6DnAmfSyJe78MnGy59Dlg6kkS934RGkUluRhVMhs6EVLLQj3Z+54t+05p8LnB63jtJ1WGA6zvdLJfx66eoe4GCcPUolXAu/BkS8Wh5GqYQRL9ZxhtIJE8TdIrMp3W3ND/wTPGwaD4uPS7k6nAAqXHVUuOqocNVR4aqjwlVHhatOFOFe6lUkx8A77j9xC4t9lkgp2dBxBTiFQzG3gE1XXAHYwJibriCn8ExzdV1kYg7hMbCVSGnJsgU8wpgTrrfwFEVRFEXJl1+3bYNlSyDbiQAAAABJRU5ErkJggg=="/>
-                                </defs>
-                            </svg>
-                        </span>
-                    </a>
-
-                    <!-- BEHANCE -->
-                    <a href="https://www.behance.net/frecca">
-                        <span class="icon">
-                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <rect width="60" height="60" fill="url(#pattern5)"/>
-                                <defs>
-                                <pattern id="pattern5" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                <use xlink:href="#image0_12_556" transform="scale(0.0166667)"/>
-                                </pattern>
-                                <image id="image0_12_556" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABmJLR0QA/wD/AP+gvaeTAAAEbElEQVRoge2ZT2wUVRzHP7/ZdtsuWgOp0Utj1N2C1QgJBFOamECMhm7VU8NBYurJ2C5VsQnEg2k06Alq2i1KDBwEDrYnI2vxD8qBQCLFGBI1Zbc1UKxgMY1At7jdmZ+H7uJu/+xs2Wmt63ySSea995vf+373zZt5bxZcXFxcXFxc/i0kn6BYz/PVqmYn6NPA3YusaaHcQPSEKdbuNS3HB+2CbQ1Pm03+AKxyRN7iMS5Sstbf+ulIriDDLsv0yC57swArleReuyBbw6nb+L+B8oxdSB6Gl92czUWlXUA+hosK13Cx4xoudlzDxY5ruNgpcSKJIIOK3pyneQUQADw5cwj1/tbI6Zn1Q+GGGgs5D5QVrtQJw6I7/a2RzlwhQweeusdMlDeL6NvMs/wTjDnvtqR6DEOsgmX+048N0XBQc7WXJ3y+6p19k/l0NtjVuNEw9BRQmqe+BRMIRXJ6KniEM81eCDc8KUgDgCgJDImV/VXRl45Z3Xbsu1g4eFShudB+7xRH5nAaQ2WjCrsAVABVbnnjLarUiaBMV51C5jU8CnJC4KKiBuAHtgBVTml01PA8PDHc9Ww1fHYJQJG7Ut4zmVTR138dix/c3HEymdkwsq+pYrIs3i5KBw68VZbC8JXx8tHf0gUR3Tqj3RS1GgOh/m/mujg1Hd650N04JqIfFCrGUcMKV4BzqfNJA35MGmbnhpfPTQFEw8FXIPurhIiG/Smz2tFhxKoGdoFuA5LA/kAocgigZsexD6Ph4HagvhCNjhoO7IgcAY7MrI92bX0Yw/M+aOPMNjW1O30eqzrbBryb0Xww1hP8xd8a+RZA4CMt0PCSrLQCbf1DXkNfBHkTSGQ0XQq09Q9llOuB4cxDlbp0o5gya2GyUBwd4Wh3cDvCa+mywlWBrxLXfPsfaOkbB96Lhhsug3wMIMLFzOsDoUhTrvw3E4lRX0Vhr3BHR1jgfmB9+hBoADpL743vSccEQp8fBgYAVIkvJP/j7V8uKH4uluIpjShbssrIaUU3KJr1vTva3XgG0dXz5Yn1FK5lSeawwPnsGi2brpfagQPrb9+jKjoIrLQ5CmKxDV8FOTyFtz2zUmFT6nRF5dR9t19THtN4C8h8iCVV9YVAKCKBUEREsu+UO6HgzYPdYn1Wvu5gE0JvRtX3iWu+ukc7+hIwvbJKeCc3KVSqZZ4NtPVfBlBFYj3Bfsj974KdnoINq1Bb0xr52S4PQKy7cZuKHgJ82Sr0kxJfvPnBl07emrOP3ibP0NjEXlV51a6PRTcM/KSqe1D5fVZyj2GIWqsUHgGeA9blyDMMus80rK8rPaUj5kS5JrwT1aawWSwJITxmpxWWYHsI1IrI0Tl/OrVmbxPm5yGQsMfyMGFZ4I0Dgih5/oudH/+7b1qu4WLHNVzsuIaLnXwM31h0Fc7xp12AvWHRE45IWRq+sAuwNWyKtRsYd0TO4vIHlvWGXZCt4TUtxwdFStYi9AHXHZHmLNeBXixrXXpn5eLi4uLi4rI8+RsZCH7GQADIrQAAAABJRU5ErkJggg=="/>
-                                </defs>
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
+        </section>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 </body>
 </html>
