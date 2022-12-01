@@ -1,0 +1,215 @@
+$primary: #E0883A;
+$dark: #120902;
+$body-bg: #03120F;
+$body-color: #E0883A;
+$card-bg: $body-bg;
+$card-border-color: $primary;
+$card-border-width: 4px;
+$headings-font-family: "Playfair Display";
+$btn-font-size: 25px;
+$btn-font-weight: 700;
+$font-family-base: "Roboto";
+$font-size-base: 1.875rem;
+$line-height-base: 1.25;
+$white: #DAD9D7;
+
+$theme-colors: (
+  "primary": $primary,
+  "dark": $dark,
+);
+
+@import "../bootstrap/scss/bootstrap.scss";
+@import "../bootstrap/scss/variables.scss";
+
+
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.navbar-logo {
+    display: block;
+    text-decoration: none;
+    color: $white;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 41px;
+    font-family: 'Futura PT Medium';
+}
+
+.navbar-logo:hover {
+    color: $white;
+}
+
+.navbar-slogan {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 41px;
+    font-family: $headings-font-family;
+}
+
+h2 {
+    color: $white;
+    font-size: 55px;
+    margin-bottom: 60px;
+}
+
+p {
+    color: $white;
+    /*font-size: 25px;*/
+}
+
+.navbar {
+    max-width: 100%;
+}
+
+.container-fluid {
+    padding-top: 0;
+}
+
+.hero {
+    height: calc(100vh - 50px);
+}
+
+.cta {
+    position: absolute;
+    bottom: 90px;
+    background: rgba(3, 18, 15, 0.5);
+    border-radius: 5px;
+}
+
+.hero-indicators {
+    bottom: 80px;
+}
+
+.scroll-arrow {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    svg {
+        -moz-animation: bounce 2s infinite;
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
+      }
+       
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-30px);
+        }
+        60% {
+          transform: translateY(-15px);
+        }
+      }
+}
+
+.card-text {
+    margin-left: 32px;
+    font-size: 25px;
+}
+
+.process {
+    background-color: $body-bg;
+    height: 100%;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.circle {
+    width: 136px;
+    height: 136px;
+    border: 4px solid $primary;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 90px;
+    color: $primary;
+    background-color: $body-bg;
+}
+
+.arrow {
+    justify-content: center;
+    align-items: center;
+    min-width: 106px;
+    max-width: 106px;
+}
+
+.thumb img:hover {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+#about img {
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 991px) {
+    .hero {
+        height: unset;
+    }
+
+    .navbar-logo {
+        font-size: 28px;
+    }
+
+    .navbar-slogan {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .navbar-logo {
+        font-size: 28px;
+    }
+
+    .navbar-slogan {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar-logo {
+        font-size: 24px;
+    }
+
+    .navbar-slogan {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar-logo {
+        font-size: 20px;
+    }
+
+    .navbar-slogan {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .navbar-logo {
+        font-size: 16px;
+    }
+
+    .navbar-slogan {
+        font-size: 20px;
+    }
+}
