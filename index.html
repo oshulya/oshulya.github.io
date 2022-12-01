@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/3c6b0199ae7b57966132e83c939d77e2?family=Futura+PT+Medium" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>OSHU - Art photography for your walls</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">O.SHU</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container flex-cols-2">
+                <a class="navbar-logo" href="#">O.SHU</a>
+                <div class="col d-flex justify-content-center w-100">
+                    <p class="navbar-slogan mb-1">Art photography for your walls</p>
+                </div>
+                
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse row" id="navbarSupportedContent">
@@ -38,7 +43,7 @@
                         <a href="#contacts" class="nav-link">Contacts</a>
                     </li>
                   </ul>
-                </div>
+                </div> -->
               </div>
         </nav>
     </header>
@@ -116,7 +121,7 @@
         <div class="row position-relative flex-column align-items-center justify-content-center hero">
             <div class="col">
                 <div id="carouselExampleIndicators" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="4000" data-bs-touch="true">
-                    <div class="carousel-indicators">
+                    <div class="carousel-indicators hero-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -162,7 +167,7 @@
                   </div>
             </div>
 
-            <div class="cta d-none w-75 pt-4 pb-4 d-lg-flex flex-column align-items-center">
+            <div class="cta d-none w-75 pt-4 pb-3 d-lg-flex flex-column align-items-center">
                 <h1 class="text-center lh-1">Get set of 5 photos<br>in a few seconds</h1>
                 <p>300 dpi each photo</p>
                 <a href="https://buy.stripe.com/test_4gw7stdIOd2Bf4c8wx" class="btn btn-primary ps-5 pe-5 mb-4 pb-3 pt-3 rounded-pill">Get this set</a>
@@ -176,42 +181,90 @@
         </div>
     </section>
 
+    <!-- SCROLL ARROW -->
+    <div class="d-none d-lg-flex container-fluid">
+        <div class="scroll-arrow">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="60" height="60" fill="url(#pattern0)"/>
+                <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_1_76" transform="scale(0.0166667)"/>
+                </pattern>
+                <image id="image0_1_76" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABmJLR0QA/wD/AP+gvaeTAAAA+klEQVRoge3Y2w7BUBBGYd6wGo0Lnp5IiMMLkCw3JramFXR0H/zfA8zMyr5qJxMRERERERERkb8DNMAR2AJV7HvagBmwA87AYuiwKXDg4TJ4qCNgcb/JnIDp0KF7niUR3RELsPcYXHcMjhrdE3sBaq8F844FV2DlsuCzW5qeW5bei6JHjxYbLIwWPXpssHj06GixwQGjRUePDQ75eXQyscFBP4tOLjY4zD062VjjGZ18rPGIzibWDInOLtZ8E51trPkkOvtY8050MbHmVXRxsYb+b9ekvrFd9bx0WS/b9iK6vFjTEV1urAEqYAOsSfC3r4iIiIiIiIhIfm4dY2Hytt7edgAAAABJRU5ErkJggg=="/>
+                </defs>
+            </svg>
+        </div>
+    </div>
+
     <section id="process" class="container">
         <div class="row row-cols-auto justify-content-center justify-content-lg-start flex-colum flex-lg-row">
             <div class="col">
-                <h2 class="text-center text-lg-start">Process</h2>
+                <h2 class="text-center text-lg-start">Purchase process</h2>
+            </div>
+        </div>
+        <div class="d-none d-lg-flex row flex-column flex-lg-row justify-content-center align-items-center gy-5">
+            <div class="col d-flex flex-column justify-content-center align-items-center text-center process">
+                <span class="circle mb-3">1</span>
+            </div>
+            <div class="col arrow d-none d-lg-flex">
+                <svg width="108" height="24" viewBox="0 0 108 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M107.061 13.0607C107.646 12.4749 107.646 11.5251 107.061 10.9393L97.5147 1.3934C96.9289 0.807611 95.9792 0.807611 95.3934 1.3934C94.8076 1.97919 94.8076 2.92893 95.3934 3.51472L103.879 12L95.3934 20.4853C94.8076 21.0711 94.8076 22.0208 95.3934 22.6066C95.9792 23.1924 96.9289 23.1924 97.5147 22.6066L107.061 13.0607ZM0 13.5H106V10.5H0V13.5Z" fill="#E0883A"/>
+                </svg>
+            </div>
+            <div class="col d-flex flex-column justify-content-center align-items-center text-center process">
+                <span class="circle mb-3">2</span>
+            </div>
+            <div class="col arrow d-none d-lg-flex">
+                <svg width="108" height="24" viewBox="0 0 108 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M107.061 13.0607C107.646 12.4749 107.646 11.5251 107.061 10.9393L97.5147 1.3934C96.9289 0.807611 95.9792 0.807611 95.3934 1.3934C94.8076 1.97919 94.8076 2.92893 95.3934 3.51472L103.879 12L95.3934 20.4853C94.8076 21.0711 94.8076 22.0208 95.3934 22.6066C95.9792 23.1924 96.9289 23.1924 97.5147 22.6066L107.061 13.0607ZM0 13.5H106V10.5H0V13.5Z" fill="#E0883A"/>
+                </svg>
+            </div>
+            <div class="col d-flex flex-column justify-content-center align-items-center text-center process">
+                <span class="circle mb-3">3</span>
+            </div>
+            <div class="col arrow d-none d-lg-flex">
+                <svg width="108" height="24" viewBox="0 0 108 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M107.061 13.0607C107.646 12.4749 107.646 11.5251 107.061 10.9393L97.5147 1.3934C96.9289 0.807611 95.9792 0.807611 95.3934 1.3934C94.8076 1.97919 94.8076 2.92893 95.3934 3.51472L103.879 12L95.3934 20.4853C94.8076 21.0711 94.8076 22.0208 95.3934 22.6066C95.9792 23.1924 96.9289 23.1924 97.5147 22.6066L107.061 13.0607ZM0 13.5H106V10.5H0V13.5Z" fill="#E0883A"/>
+                </svg>
+            </div>
+            <div class="col d-flex flex-column justify-content-center align-items-center text-center process">
+                <span class="circle mb-3 d-flex align-items-center">
+                    <svg width="70" height="73" viewBox="0 0 70 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 34.9828C13.7307 34.7719 16.543 34.1581 26.2213 47.9089C33.6437 33.6347 41.892 21.2795 50.8197 10.5009C59.6094 -0.114382 59.6777 -0.141344 70 0.0378773C52.4371 22.68 38.1049 46.9049 26.6424 72.5716C20.5078 57.3267 11.9396 44.4926 0 34.9828Z" fill="#E0883A"/>
+                    </svg>
+                </span>
             </div>
         </div>
         <div class="row flex-column flex-lg-row justify-content-center align-items-center gy-5">
-            <div class="col d-flex flex-column justify-content-center align-items-center text-center progress">
-                <span class="circle mb-3">1</span>
+            <div class="col d-flex flex-column justify-content-center align-items-center text-center process">
+                <span class="d-lg-none circle mb-3">1</span>
                 <p>Click the button<br>“Get this set”</p>
             </div>
-            <div class="col arrow d-none d-lg-flex">
+            <div class="col arrow d-none d-lg-flex hide">
                 <svg width="108" height="24" viewBox="0 0 108 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M107.061 13.0607C107.646 12.4749 107.646 11.5251 107.061 10.9393L97.5147 1.3934C96.9289 0.807611 95.9792 0.807611 95.3934 1.3934C94.8076 1.97919 94.8076 2.92893 95.3934 3.51472L103.879 12L95.3934 20.4853C94.8076 21.0711 94.8076 22.0208 95.3934 22.6066C95.9792 23.1924 96.9289 23.1924 97.5147 22.6066L107.061 13.0607ZM0 13.5H106V10.5H0V13.5Z" fill="#E0883A"/>
                 </svg>
             </div>
-            <div class="col d-flex flex-column justify-content-center align-items-center text-center progress">
-                <span class="circle mb-3">2</span>
-                <p>Enter your<br>email address</p>
+            <div class="col d-flex flex-column justify-content-center align-items-center text-center process">
+                <span class="d-lg-none circle mb-3">2</span>
+                <p>Fill in<br>payment form</p>
             </div>
-            <div class="col arrow d-none d-lg-flex">
+            <div class="col arrow d-none d-lg-flex hide">
                 <svg width="108" height="24" viewBox="0 0 108 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M107.061 13.0607C107.646 12.4749 107.646 11.5251 107.061 10.9393L97.5147 1.3934C96.9289 0.807611 95.9792 0.807611 95.3934 1.3934C94.8076 1.97919 94.8076 2.92893 95.3934 3.51472L103.879 12L95.3934 20.4853C94.8076 21.0711 94.8076 22.0208 95.3934 22.6066C95.9792 23.1924 96.9289 23.1924 97.5147 22.6066L107.061 13.0607ZM0 13.5H106V10.5H0V13.5Z" fill="#E0883A"/>
                 </svg>
             </div>
-            <div class="col d-flex flex-column justify-content-center align-items-center text-center progress">
-                <span class="circle mb-3">3</span>
+            <div class="col d-flex flex-column justify-content-center align-items-center text-center process">
+                <span class="d-lg-none circle mb-3">3</span>
                 <p>Pay the order<br> with your card </p>
             </div>
-            <div class="col arrow d-none d-lg-flex">
+            <div class="col arrow d-none d-lg-flex hide">
                 <svg width="108" height="24" viewBox="0 0 108 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M107.061 13.0607C107.646 12.4749 107.646 11.5251 107.061 10.9393L97.5147 1.3934C96.9289 0.807611 95.9792 0.807611 95.3934 1.3934C94.8076 1.97919 94.8076 2.92893 95.3934 3.51472L103.879 12L95.3934 20.4853C94.8076 21.0711 94.8076 22.0208 95.3934 22.6066C95.9792 23.1924 96.9289 23.1924 97.5147 22.6066L107.061 13.0607ZM0 13.5H106V10.5H0V13.5Z" fill="#E0883A"/>
                 </svg>
             </div>
-            <div class="col d-flex flex-column justify-content-center align-items-center text-center progress">
-                <span class="circle mb-3 d-flex align-items-center">
+            <div class="col d-flex flex-column justify-content-center align-items-center text-center process">
+                <span class="d-lg-none circle mb-3 d-flex align-items-center">
                     <svg width="70" height="73" viewBox="0 0 70 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 34.9828C13.7307 34.7719 16.543 34.1581 26.2213 47.9089C33.6437 33.6347 41.892 21.2795 50.8197 10.5009C59.6094 -0.114382 59.6777 -0.141344 70 0.0378773C52.4371 22.68 38.1049 46.9049 26.6424 72.5716C20.5078 57.3267 11.9396 44.4926 0 34.9828Z" fill="#E0883A"/>
                     </svg>
@@ -224,7 +277,7 @@
     <section id="howto" class="container">
         <div class="row">
             <div class="col text-md-start">
-                <h2 class="text-center text-lg-start">How to use</h2>
+                <h2 class="text-center text-lg-start">Photos in the interior</h2>
             </div>
         </div>
 
@@ -319,8 +372,8 @@
             </div>
             <div class="row flex-column flex-md-row justify-content-md-between">
                 <div class="col-12 col-lg-7 d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-lg-start">
-                    <p>Write me&nbsp;</p>
-                    <p><a href="mailto:olgashulzhitskaya@gmail.com">olgashulzhitskaya@gmail.com</a></p>
+                    <p class="mb-0">Write me&nbsp;</p>
+                    <p class="mb-0"><a href="mailto:olgashulzhitskaya@gmail.com">olgashulzhitskaya@gmail.com</a></p>
                 </div>
                 <div class="col-12 col-lg-5 d-flex align-items-center justify-content-center justify-content-lg-end gap-3">
                     <p class="mb-0">Follow  me</p>
