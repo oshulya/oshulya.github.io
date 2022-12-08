@@ -24,8 +24,8 @@ $theme-colors: (
 
 
 section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 h1 {
@@ -59,7 +59,7 @@ h2 {
 h3 {
     color: $white;
     font-size: 55px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 
 p {
@@ -169,6 +169,11 @@ p {
                 height: inherit !important;
             }
         }
+    }
+
+    section {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .carousel-indicators {
