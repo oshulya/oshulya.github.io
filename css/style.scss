@@ -29,6 +29,12 @@ section {
 }
 
 h1 {
+    line-height: 41px;
+    font-family: $headings-font-family;
+    color: $body-color;
+}
+
+h2 {
     font-weight: 900;
     font-size: 50px;
 }
@@ -40,7 +46,6 @@ h1 {
     font-size: 35px;
     font-weight: 700;
     line-height: 41px;
-    font-family: 'Futura PT Medium';
 }
 
 .navbar-logo:hover {
@@ -48,13 +53,10 @@ h1 {
 }
 
 .navbar-slogan {
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 41px;
-    font-family: $headings-font-family;
+    font-size: 45px;
 }
 
-h2 {
+h3 {
     color: $white;
     font-size: 55px;
     margin-bottom: 60px;
@@ -79,21 +81,18 @@ p {
 
 .cta {
     position: absolute;
-    bottom: 90px;
+    bottom: 70px;
     background: rgba(3, 18, 15, 0.5);
     border-radius: 5px;
 }
 
 .hero-indicators {
-    bottom: 80px;
+    bottom: 60px;
 }
 
 .scroll-arrow {
     position: absolute;
-    bottom: 10px;
-    display: flex;
-    width: 100%;
-    justify-content: center;
+    bottom: -10px;
 
     svg {
         -moz-animation: bounce 2s infinite;
@@ -135,7 +134,6 @@ p {
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    //align-items: center;
     font-family: 'Playfair Display';
     font-weight: 700;
     font-size: 96px;
@@ -163,6 +161,18 @@ p {
 @media only screen and (max-width: 991px) {
     .hero {
         height: unset;
+        
+        .col {
+            height: 50vh;
+
+            #carouselExampleIndicators {
+                height: inherit !important;
+            }
+        }
+    }
+
+    .carousel-indicators {
+        bottom: 0;
     }
 
     .navbar-logo {
